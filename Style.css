@@ -1,0 +1,363 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+  background: url('img3.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+}
+
+/* General Styles */
+#Courses {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Course Cards */
+.course-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 280px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.course-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #007BFF;
+  text-transform: uppercase;
+}
+
+.course-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-list li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hover Effect for List Items */
+.course-list li:hover {
+  color: #007BFF;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #Courses {
+    padding: 20px;
+  }
+
+  .course-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+#Contact {
+  background-color: #f4f4f9; 
+  max-width: 400px; 
+  margin: 50px auto; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  font-family: 'Arial', sans-serif; 
+  text-align: center;
+  color: #333;
+}
+
+#Contact h1 {
+  font-size: 1.8rem;
+  color: #1a73e8; 
+  margin-bottom: 20px;
+}
+
+#Contact p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#Contact label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+#Contact input[type="text"],
+#Contact input[type="email"],
+#Contact textarea {
+  width: 100%; 
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+#Contact input[type="text"]:focus,
+#Contact input[type="email"]:focus,
+#Contact textarea:focus {
+  border-color: #1a73e8; 
+  outline: none;
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); 
+}
+#Contact input[type="radio"],
+#Contact input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 0; 
+} 
+#Contact label {
+  margin: 0; 
+  font-size: 1rem;
+  color: #555;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 5px; 
+}
+
+.radio-group label input,
+.checkbox-group label input {
+  margin-right: 10px; 
+}
+
+
+#Contact button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #1a73e8; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Contact button:hover {
+  background-color: #0056b3;
+}
+#Login {
+  background-color: #f4f4f9; 
+  max-width: 400px; 
+  margin: 50px auto; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  font-family: 'Arial', sans-serif; 
+  text-align: center; 
+  color: #333;
+}
+
+#Login h2 {
+  font-size: 1.8rem;
+  color: #1a73e8; 
+  margin-bottom: 20px;
+}
+
+#Login .form-group {
+  margin-bottom: 15px;
+  text-align: left; 
+}
+
+#Login label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#Login input[type="text"],
+#Login input[type="password"] {
+  width: 100%; 
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#Login input[type="text"]:focus,
+#Login input[type="password"]:focus {
+  border-color: #1a73e8; 
+  outline: none;
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); 
+}
+
+#Login .btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #1a73e8; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Login .btn:hover {
+  background-color: #0056b3; 
+}
+
+#Login .forget-password {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+#Login .forget-password a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#Login .forget-password a:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learning Platform Website</title> 
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Learning Platform</a>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Courses">Courses</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Login">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Create Amazing future</div>
+    <div class="sub_title"> with New Technogies </div>
+    <div class="btns">
+      <button>Learn More</button>
+      <button>Subscribe</button>
+    </div>
+  </div id="About">
+  <h1 style= "color : blue;" class = "heading"> Welcome to my Website</h1>
+  <center>
+  <p>Welcome to <i>Learning Platfrom website</i>,<br> 
+    a transformative online learning platform designed to help you shape a brighter future.<br>
+    Build your career with <b>amazing technologies</b>
+  </p>
+  </center>
+  </div>
+  <div id="Courses">
+    <h2 class="heading">Top Courses</h2>
+    <div class="course-card" data-category="Web Development">
+      <h3 class="course-title">Web Development</h3>
+      <ul class="course-list">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </div>
+  
+    <div class="course-card" data-category="Artificial Intelligence">
+      <h3 class="course-title">Artificial Intelligence</h3>
+      <ul class="course-list">
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Natural Language Processing</li>
+        <li>Computer Vision</li>
+      </ul>
+    </div>
+  
+    <div class="course-card" data-category="Machine Learning">
+      <h3 class="course-title">Machine Learning</h3>
+      <ul class="course-list">
+        <li>Supervised Learning</li>
+        <li>Unsupervised Learning</li>
+        <li>Reinforcement Learning</li>
+        <li>Time Series Analysis</li>
+      </ul>
+    </div>
+  
+    <div class="course-card" data-category="Data Visualization">
+      <h3 class="course-title">Data Visualization</h3>
+      <ul class="course-list">
+        <li>Matplotlib</li>
+        <li>Seaborn</li>
+        <li>Plotly</li>
+        <li>Power BI</li>
+      </ul>
+    </div>
+  </div>
+  
+<div id="Contact">
+  <h1> Contact Us </h1>
+                         <p> Fell free to get in touch us using the form below:</p>
+                        <form action = "">
+          
+                          <label for = "username">Name:</label>
+                          <input type = "text">
+                          <br>
+          
+                          <label for = "email">Email:</label>
+                          <input type = "email">
+                          <br>
+          
+                          <div class="radio-group">
+                            <b>Choose your Gender</b>
+                            <label>
+                                <input type="radio" id="male" name="gender" value="male">
+                                Male
+                            </label>
+                            <label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                Female
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <b>Choose your Interest</b>
+                            <label>
+                                <input type="checkbox" id="coding" value="coding">
+                                Learning with Quiz
+                            </label>
+                            <label>
+                                <input type="checkbox" id="reading" value="reading">
+                                Reading
+                            </label>
+                        </div>
+                        
+          
+                         <label for ="bio">Bio (upto 200 Characters)</label>
+                         <input type ="text">
+                         <br>
+                      
+                         <button type = "submit">Submit</button>
+                       </form>
+
+</div>
+<div id="Login">
+  <h2> Login </h2>
+            <form action="">
+                <div class = "form=group">
+                    <label for = "username">Username</label>
+                    <input type = "text" name = "username" placeholder = "Enter your username" required ID = "username">
+                </div>
+                <div class="form-group">
+                    <label for = "password">Password</label>
+                    <input type = "password" name = "password" placeholder="Enter your password" ID = "password" required>
+                </div>
+
+                <button type="submit" class = "btn"> Login </button>
+                <div class = "forget-password">
+                    <a href="a">Forget password</a>
+
+                </div>  
+            </form> 
+</div>
+</body>
+</html>
